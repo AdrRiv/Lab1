@@ -129,7 +129,8 @@ class Node{
 	   with a largest key
 	   */
 	   public int getMax(Node root){
-         //implement in here
+         	if (root.right == null) return root.value;
+        	return getMax(root.right);
 	   }
 	   
 	   
