@@ -58,7 +58,12 @@ class Node{
 	   Prints the value of every node preorder
 	   */
 	   public void preOrderTraversal(Node root){
-	     //implement in here
+	     if (root != null)
+		{
+			System.out.print(root.value + " ");
+			preOrderTraversal(node.left);
+			preOrderTraversal(node.right);
+		}
 		   
 	   }
 
